@@ -19,12 +19,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let created = WeaponDb.createTable()
         if created {
-            let ak = ["name": "AKM", "distance": 400, "bullet": 7.62, "price": 500] as [String : Any]
-            let ump = ["name": "ump9", "distance": 200, "bullet": 0.9, "price": 100] as [String : Any]
-            let m16 = ["name": "M16", "distance": 500, "bullet": 5.56, "price": 300] as [String : Any]
-            let m4 = ["name": "M416", "distance": 700, "bullet": 5.56, "price": 600] as [String: Any]
-            let g98k = ["name": "98K", "distance": 1200, "bullet": 7.62, "price": 1000] as [String: Any]
-            let uzi = ["name": "UZI", "distance": 100, "bullet": 0.9, "price": 100] as [String: Any]
+            let ak = ["name": "AKM", "distance": 400, "bullet": 7.62, "price": 500, "rank": 3] as [String : Any]
+            let ump = ["name": "ump9", "distance": 200, "bullet": 0.9, "price": 100, "rank": 5] as [String : Any]
+            let m16 = ["name": "M16", "distance": 500, "bullet": 5.56, "price": 300, "rank": 4] as [String : Any]
+            let m4 = ["name": "M416", "distance": 700, "bullet": 5.56, "price": 600, "rank": 2] as [String: Any]
+            let g98k = ["name": "98K", "distance": 1200, "bullet": 7.62, "price": 1000, "rank": 1] as [String: Any]
+            let uzi = ["name": "UZI", "distance": 100, "bullet": 0.9, "price": 100, "rank": 6] as [String: Any]
             WeaponDb.insertToTable(dataDict: ak as NSDictionary)
             WeaponDb.insertToTable(dataDict: ump as NSDictionary)
             WeaponDb.insertToTable(dataDict: m16 as NSDictionary)
