@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60F8EDB946DF8BF1E57F84F9 /* Pods_FMDBDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82E9C4D9CF00DBC95A22D841 /* Pods_FMDBDemo.framework */; };
 		6F9B2F04206DE2BD0024ACC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9B2F03206DE2BD0024ACC0 /* AppDelegate.swift */; };
 		6F9B2F06206DE2BD0024ACC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9B2F05206DE2BD0024ACC0 /* ViewController.swift */; };
 		6F9B2F09206DE2BD0024ACC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F9B2F07206DE2BD0024ACC0 /* Main.storyboard */; };
 		6F9B2F0B206DE2BE0024ACC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F9B2F0A206DE2BE0024ACC0 /* Assets.xcassets */; };
 		6F9B2F0E206DE2BE0024ACC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F9B2F0C206DE2BE0024ACC0 /* LaunchScreen.storyboard */; };
+		6F9B2F16206DE63C0024ACC0 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F9B2F15206DE63C0024ACC0 /* libsqlite3.tbd */; };
+		6F9B2F18206DE6A60024ACC0 /* WeaponModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9B2F17206DE6A60024ACC0 /* WeaponModel.swift */; };
+		6F9B2F1B206E02CC0024ACC0 /* WeaponCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9B2F19206E02CC0024ACC0 /* WeaponCell.swift */; };
+		6F9B2F1C206E02CC0024ACC0 /* WeaponCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F9B2F1A206E02CC0024ACC0 /* WeaponCell.xib */; };
+		6F9B2F1E206E06EC0024ACC0 /* WeaponFDMB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9B2F1D206E06EC0024ACC0 /* WeaponFDMB.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		65497ADC08186B79FCA41A8F /* Pods-FMDBDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMDBDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FMDBDemo/Pods-FMDBDemo.release.xcconfig"; sourceTree = "<group>"; };
 		6F9B2F00206DE2BD0024ACC0 /* FMDBDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FMDBDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F9B2F03206DE2BD0024ACC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F9B2F05206DE2BD0024ACC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,13 @@
 		6F9B2F0A206DE2BE0024ACC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F9B2F0D206DE2BE0024ACC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F9B2F0F206DE2BE0024ACC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F9B2F15206DE63C0024ACC0 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		6F9B2F17206DE6A60024ACC0 /* WeaponModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponModel.swift; sourceTree = "<group>"; };
+		6F9B2F19206E02CC0024ACC0 /* WeaponCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponCell.swift; sourceTree = "<group>"; };
+		6F9B2F1A206E02CC0024ACC0 /* WeaponCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeaponCell.xib; sourceTree = "<group>"; };
+		6F9B2F1D206E06EC0024ACC0 /* WeaponFDMB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaponFDMB.swift; sourceTree = "<group>"; };
+		82E9C4D9CF00DBC95A22D841 /* Pods_FMDBDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FMDBDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF4032C035DAF12879F180B8 /* Pods-FMDBDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMDBDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FMDBDemo/Pods-FMDBDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +43,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F9B2F16206DE63C0024ACC0 /* libsqlite3.tbd in Frameworks */,
+				60F8EDB946DF8BF1E57F84F9 /* Pods_FMDBDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48AD42F5244CACECEDD2F71A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF4032C035DAF12879F180B8 /* Pods-FMDBDemo.debug.xcconfig */,
+				65497ADC08186B79FCA41A8F /* Pods-FMDBDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6F9B2EF7206DE2BD0024ACC0 = {
 			isa = PBXGroup;
 			children = (
 				6F9B2F02206DE2BD0024ACC0 /* FMDBDemo */,
 				6F9B2F01206DE2BD0024ACC0 /* Products */,
+				48AD42F5244CACECEDD2F71A /* Pods */,
+				C4A46607CB0370E603DD4FFA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +83,25 @@
 			children = (
 				6F9B2F03206DE2BD0024ACC0 /* AppDelegate.swift */,
 				6F9B2F05206DE2BD0024ACC0 /* ViewController.swift */,
+				6F9B2F19206E02CC0024ACC0 /* WeaponCell.swift */,
+				6F9B2F1D206E06EC0024ACC0 /* WeaponFDMB.swift */,
+				6F9B2F1A206E02CC0024ACC0 /* WeaponCell.xib */,
+				6F9B2F17206DE6A60024ACC0 /* WeaponModel.swift */,
 				6F9B2F07206DE2BD0024ACC0 /* Main.storyboard */,
 				6F9B2F0A206DE2BE0024ACC0 /* Assets.xcassets */,
 				6F9B2F0C206DE2BE0024ACC0 /* LaunchScreen.storyboard */,
 				6F9B2F0F206DE2BE0024ACC0 /* Info.plist */,
 			);
 			path = FMDBDemo;
+			sourceTree = "<group>";
+		};
+		C4A46607CB0370E603DD4FFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F9B2F15206DE63C0024ACC0 /* libsqlite3.tbd */,
+				82E9C4D9CF00DBC95A22D841 /* Pods_FMDBDemo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +111,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F9B2F12206DE2BE0024ACC0 /* Build configuration list for PBXNativeTarget "FMDBDemo" */;
 			buildPhases = (
+				11D6936CF409FF1F2CEA3607 /* [CP] Check Pods Manifest.lock */,
 				6F9B2EFC206DE2BD0024ACC0 /* Sources */,
 				6F9B2EFD206DE2BD0024ACC0 /* Frameworks */,
 				6F9B2EFE206DE2BD0024ACC0 /* Resources */,
+				4C62BD173FDF62E6E849A3EA /* [CP] Embed Pods Frameworks */,
+				CB4873620C770D263415D764 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F9B2F0E206DE2BE0024ACC0 /* LaunchScreen.storyboard in Resources */,
+				6F9B2F1C206E02CC0024ACC0 /* WeaponCell.xib in Resources */,
 				6F9B2F0B206DE2BE0024ACC0 /* Assets.xcassets in Resources */,
 				6F9B2F09206DE2BD0024ACC0 /* Main.storyboard in Resources */,
 			);
@@ -130,12 +174,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		11D6936CF409FF1F2CEA3607 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FMDBDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C62BD173FDF62E6E849A3EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FMDBDemo/Pods-FMDBDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FMDBDemo/Pods-FMDBDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB4873620C770D263415D764 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FMDBDemo/Pods-FMDBDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6F9B2EFC206DE2BD0024ACC0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6F9B2F06206DE2BD0024ACC0 /* ViewController.swift in Sources */,
+				6F9B2F1E206E06EC0024ACC0 /* WeaponFDMB.swift in Sources */,
+				6F9B2F1B206E02CC0024ACC0 /* WeaponCell.swift in Sources */,
+				6F9B2F18206DE6A60024ACC0 /* WeaponModel.swift in Sources */,
 				6F9B2F04206DE2BD0024ACC0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +379,7 @@
 		};
 		6F9B2F13206DE2BE0024ACC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF4032C035DAF12879F180B8 /* Pods-FMDBDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,7 +389,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = leezb101Test.FMDBDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = leezb101Test.KR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -296,6 +398,7 @@
 		};
 		6F9B2F14206DE2BE0024ACC0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65497ADC08186B79FCA41A8F /* Pods-FMDBDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -305,7 +408,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = leezb101Test.FMDBDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = leezb101Test.KR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
